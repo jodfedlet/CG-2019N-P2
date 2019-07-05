@@ -1,6 +1,18 @@
+/*
+Author: Jod F. Pierre
+Mat: 1711100036
+
+
+Description:
+
+	Implementar uma aplicação gráfica usando OpenGL, shaders, VAO e VBO que mostre um triangulo ao centro
+da tela. O triângulo deve possuir duas cores, i.e. azul e amarelo, que ocupam exatamente a metade do
+triângulo cada. Isso significa que não há transição ou interpolação de cores entre as metades do triângulo. 
+
+*/
 #include <iostream>
 
-// https://github.com/Dav1dde/glad
+// https://github.com/Dav1dde/glad   //para o demo do trabalho
 #include "glad.h"
 #include <GLFW/glfw3.h>
 
