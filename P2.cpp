@@ -71,7 +71,7 @@ int main()
 
 	// glfw window creation
 	// --------------------
-	GLFWwindow* window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "LearnOpenGL", NULL, NULL);
+	GLFWwindow* window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "PROVA 2", NULL, NULL);
 	if (window == NULL)
 	{
 		std::cout << "Failed to create GLFW window" << std::endl;
@@ -126,15 +126,15 @@ int main()
 		glGetProgramInfoLog(shaderProgram, 512, NULL, infoLog);
 		std::cout << "ERROR::SHADER::PROGRAM::LINKING_FAILED\n" << infoLog << std::endl;
 	}
-	glDeleteShader(vertexShader);
-	glDeleteShader(fragmentShader);
+	//glDeleteShader(vertexShader);
+	//glDeleteShader(fragmentShader);
 
 	// set up vertex data (and buffer(s)) and configure vertex attributes
 	// ------------------------------------------------------------------
 	float vertices[] = {
 		// positions         // colors
 		 0.5f, -0.5f, 0.0f,  0.0f, 0.0f, 1.0f,  // bottom right
-		-0.5f, -0.5f, 0.0f,  1.0f, 1.0f, 0.0f,  // bottom left
+		-0.5f, -0.5f, 0.0f,  1.0f, 1.0f, 0.f,  // bottom left
 		 0.0f,  0.5f, 0.0f,   // top 
 
 	};
